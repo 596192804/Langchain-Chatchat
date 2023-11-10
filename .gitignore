@@ -5,6 +5,11 @@ logs
 /knowledge_base/
 /configs/*.py
 .vscode/
+.pytest_cache
+.DS_Store
+
+
+=======
 
 # below are standard python ignore files
 # Byte-compiled / optimized / DLL files

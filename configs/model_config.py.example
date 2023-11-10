@@ -196,6 +196,31 @@ ONLINE_LLM_MODEL = {
         "provider": "QwenWorker",
     },
 
+    "pg": {
+        "connection_uri": "postgresql://postgres:postgres@127.0.0.1:5432/langchain_chatchat",
+    },
+    "es": {
+        "host": "127.0.0.1",
+        "port": "9200",
+        "index_name": "test_index",
+        "user": "",
+        "password": ""
+   }
+}
+
+# 默认向量库类型。可选：faiss, milvus, pg.
+DEFAULT_VS_TYPE = "faiss"
+
+# 缓存向量库数量
+CACHED_VS_NUM = 1
+
+# 知识库中单段文本长度
+CHUNK_SIZE = 250
+
+# 知识库中相邻文本重合长度
+OVERLAP_SIZE = 50
+
+
     # 百川 API，申请方式请参考 https://www.baichuan-ai.com/home#api-enter
     "baichuan-api": {
         "version": "Baichuan2-53B",  # 当前支持 "Baichuan2-53B"， 见官方文档。
